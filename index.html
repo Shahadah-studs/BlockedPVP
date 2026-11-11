@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockedPVP | Official Bloxd.io Intel & Arena</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Orbitron:wght@500;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blocked.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo neon-text-cyan" onclick="switchPage('home')">█ BLOCKEDPVP █</a>
+            <nav>
+                <button class="active" onclick="switchPage('home', this)">HOME</button>
+                <button onclick="switchPage('play', this)">PLAY NOW</button>
+                <button onclick="switchPage('info', this)">GAME INFO</button>
+                <button onclick="switchPage('ranking', this)">RANKS</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home" class="page active-page">
+            <div class="hero">
+                <h1 class="neon-text-cyan">THE ULTIMATE <span class="neon-text-magenta">BLOXD.IO</span> PVP HUB</h1>
+                <p>Welcome to the grid. Learn the tactics, check the tiers, and secure victory.</p>
+                <button class="pixel-btn" onclick="switchPage('play')">Enter Arena</button>
+            </div>
+
+            <div class="cyber-card">
+                <h2 style="font-family: var(--pixel-font); color: var(--neon-cyan); font-size: 1rem; margin-bottom: 15px;">:: SHAHADAH STUDIOS ELITE BROADCAST</h2>
+                <p>BlockedPVP is the ultimate custom arena destination. This portal hosts our server details, combat manuals, and tactical rank listings. Bookmark this node for layout strategy updates.</p>
+            </div>
+        </section>
+
+        <section id="play" class="page">
+            <div class="cyber-card">
+                <h1 class="neon-text-cyan" style="font-family: var(--pixel-font); font-size: 1.2rem; margin-bottom: 20px;">DEPLOYING SECTOR...</h1>
+                
+                <div class="game-container">
+                    <iframe src="https://bloxd.io" title="BlockedPVP Arena"></iframe>
+                </div>
+                
+                <div style="margin-top: 20px; text-align: center;">
+                    <p>If the game frame does not display correctly, access the main core here:</p>
+                    <a href="https://bloxd.io" target="_blank" class="pixel-btn">External Link Portal</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="info" class="page">
+            <div class="cyber-card">
+                <h1 class="neon-text-cyan" style="font-family: var(--pixel-font); font-size: 1.5rem; margin-bottom: 10px;">SERVER INTEL</h1>
+                <p>Everything you need to know about the BlockedPVP combat configuration.</p>
+                
+                <div class="info-grid">
+                    <div>
+                        <h2 class="info-header">⚔️ Combat Rules</h2>
+                        <ul class="info-list">
+                            <li><strong>No Griefing Spawn:</strong> Safe zones are active for exactly 5 seconds upon entry.</li>
+                            <li><strong>Fast Strafe Enabled:</strong> Movement mechanics are configured for peak velocity.</li>
+                            <li><strong>Block Mechanics:</strong> Instant break is active for glass and light panels.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="info-header">📡 Connection Data</h2>
+                        <ul class="info-list">
+                            <li><strong>Lobby Code:</strong> Check our official Discord or community links for the current room tag.</li>
+                            <li><strong>Tickrate:</strong> Optimized via Bloxd high-performance lobby nodes.</li>
+                            <li><strong>Host Node:</strong> Powered proudly by Shahadah Studios Elite.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ranking" class="page">
+            <div class="cyber-card">
+                <h1 class="neon-text-magenta">TIER PROGRESSION</h1>
+                <p>Track your skill standing inside the BlockedPVP combat loop.</p>
+                
+                <div class="rank-tier-container">
+                    <div class="rank-row elite-tier">
+                        <div class="rank-badge" style="color: var(--neon-magenta);">[ ELITE CORE ]</div>
+                        <div class="rank-details">
+                            <h3>Shahadah Legend</h3>
+                            <p>Reserved strictly for lobby creators, tournament winners, and staff administrators.</p>
+                        </div>
+                    </div>
+
+                    <div class="rank-row">
+                        <div class="rank-badge" style="color: var(--neon-cyan);">[ TIER III ]</div>
+                        <div class="rank-details">
+                            <h3>Neon Phantom</h3>
+                            <p>Requires achieving a high-kill streak without fall damage or manual resets.</p>
+                        </div>
+                    </div>
+
+                    <div class="rank-row">
+                        <div class="rank-badge" style="color: var(--neon-purple);">[ TIER II ]</div>
+                        <div class="rank-details">
+                            <h3>Block Gladiator</h3>
+                            <p>Granted to active fighters who excel at quick-building mid-fight cover frames.</p>
+                        </div>
+                    </div>
+
+                    <div class="rank-row" style="border-left-color: #888;">
+                        <div class="rank-badge" style="color: #888;">[ TIER I ]</div>
+                        <div class="rank-details">
+                            <h3>Grid Recruit</h3>
+                            <p>The standard entry point for all new connections arriving on the server.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; BlockedPVP | Shahadah Studios Elite</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
